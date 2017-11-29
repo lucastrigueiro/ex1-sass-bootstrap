@@ -14,13 +14,13 @@ gulp.task('sass', function () {
 gulp.task('sass-comp', function () {
  return gulp.src('./sass/**/*.sass')
    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-   .pipe(gulp.dest('./css/min'));
+   .pipe(gulp.dest('./css'));
 });
 
 //Observa a atualização de arquivos sass e então realiza as conversões
 gulp.task('sass:watch', function () {
-  gulp.watch('./sass/**/*.sass', ['sass', 'sass-comp']);
+  gulp.watch('./sass/**/*.sass', ['sass-comp']);
 });
 
 //Realiza as conversões incialmente e observa atualizações
-gulp.task('default', ['sass', 'sass-comp', 'sass:watch']);
+gulp.task('default', ['sass-comp', 'sass:watch']);
