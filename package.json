@@ -1,0 +1,27 @@
+{
+  "name": "exemplo1-sass-bootstrap",
+  "version": "1.0.0",
+  "description": "Site de exemplo usando SASS e Bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucastrigueiro/exemplo1-sass-bootstrap.git"
+  },
+  "keywords": [
+    "sass",
+    "bootstrap"
+  ],
+  "author": "lucastrigueiro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucastrigueiro/exemplo1-sass-bootstrap/issues"
+  },
+  "homepage": "https://github.com/lucastrigueiro/exemplo1-sass-bootstrap#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
